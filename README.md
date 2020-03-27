@@ -1,39 +1,19 @@
 # DCCN-Project
 
-1
-COMPUTER COMMUNICATION AND
-NETWORKING
+COMPUTER COMMUNICATION AND NETWORKING
 SEMESTER PROJECT
-MULTI THREADED SERVER AND CLIENTS WITH
-JEOPARDY PROTOCOL IMPLEMENTATION
-Name Hassan Ahmed, Muhammad Ali Buttar, M. Noman Ijaz
-Roll No. FA17-BSE-051, FA17-BSE-075, FA17-BSE-090
-Class BSE 5A
-Submitted To Dr. Munam Ali Shah2
+# MULTI THREADED SERVER AND CLIENTS WITH JEOPARDY PROTOCOL IMPLEMENTATION
+Muhammad Ali Buttar
+FA17-BSE-075
 
 
-
-Contents
-COMPUTER COMMUNICATION AND NETWORKING.................................................................. 1
-Abstract......................................................................................................................................................... 3
-Introduction................................................................................................................................................... 3
-Design Details............................................................................................................................................... 3
-Server Side................................................................................................................................................ 3
-Client Side................................................................................................................................................. 6
-Jeopardy Functionality.............................................................................................................................. 7
-Code.............................................................................................................................................................. 8
-SERVER ...................................................................................................................................................... 8
-CLIENT .....................................................................................................................................................143
-
-
-
-Abstract
+## Abstract
 This project is about implementation about a multi-threaded server and client. A server can accept more
 than one client. Server and Clients interact with each other to play Jeopardy game of questions and answers
 and client’s respective scores are updated
 
 
-Introduction
+## Introduction
 We developed a multi-threaded client/server application. The server we developed can handle
 more than one connection at a time. The main goal is to implement jeopardy game, where more
 than one client can connect to server and able to play the game.
@@ -49,9 +29,9 @@ Design Details
 
 
 
-Threading
+## Threading
 
-Server Side
+### Server Side
 A pool of single thread is created which allotted to only accepting any incoming connections at
 any time after the socket has been created and binded. For every connection accepted there is a
 specific class for threading and clients in which every connection from a client creates a new
@@ -76,7 +56,7 @@ respectively.6
 The method basically accepts the connections from clients respectively.
 
 
-Client Side
+### Client Side
 Each client contains a pool of two threads as well which are used similar to how they are used in
 the server, each one is used for sending and receiving messages. After the necessary methods of
 creating, binding the socket, the request for connection is sent to the server. Each of the method
